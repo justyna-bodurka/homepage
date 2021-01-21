@@ -1,0 +1,39 @@
+body{
+    background:#fefefe ;
+}
+h1{
+    color:blue;
+}
+h2{
+    color: #1460aa;
+}
+p{
+    color: #3299CC;
+
+}
+.green-header{
+    color:green;
+}
+#top{
+    background:lightcyan;
+}
+a{
+    color:#7deca2;
+}
+nav a{color:royalblue;
+}
+.pink-background {
+    background: #ffccff;
+}
+.footer {
+    color:#6633cc;
+}
+.turcus-header{
+    color:#006666;
+}
+.background{
+    background:	#dedede;
+}
+.red-header{
+    color:#cc0000;
+}
