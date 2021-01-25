@@ -1,62 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="main-navigation">
-    
-        <nav>
-
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka html</a>
-            <a href="prace-domowe.html">Prace domowe</a>
-            <a href="brak-pomyslu.html">Brak pomysłu</a>
-        </nav>
-
+      <nav>
+        <a class="main-navigation__link" href="index.html">Strona główna</a>
+        <a class="main-navigation__link" href="nauka-html.html">Nauka html</a>
+        <a class="main-navigation__link" href="prace-domowe.html">Prace domowe</a>
+        <a class="main-navigation__link" href="brak-pomyslu.html">Brak pomysłu</a>
+      </nav>
     </header>
     <main>
-        <div class="box">
+      <div class="main">
         <header id="top">
-            <h1 class="green-header"> Justyna Bodurka- Różności.</h1>
+          <h1 class="main__title">Justyna Bodurka- Różności.</h1>
         </header>
 
-
         <section>
-
-            <h2 class="turcus-header">Kim jestem?</h2>
-            <img src="justyna-wakacje.jpg" alt="tęskno" />
-
+          <h2 class="article__title">Kim jestem?</h2>
+          <img src="justyna-wakacje.jpg" alt="tęskno" />
         </section>
         <section>
-            <h2>Bo musi być jakis tekst, a nie wiem co pisać </h2>
+          <h2 class ="article__title">Bo musi być jakis tekst, a nie wiem co pisać</h2>
 
-
-
-            <article>
-                <h3>zaraz dodam zdjęcia i jak zdąże to w css klasy.</h3>
-                <p>wstałam o niemożliwej godzinie żeby to zrobić, weny brak a jakis tekst musi być </p>
-
-
-            </article>
-
-
-
+          <article class="article">
+            <h3 class=" article__title article__title--less-important">zaraz dodam zdjęcia i jak zdąże to w css klasy.</h3>
+            <p class= "article__description">
+              wstałam o niemożliwej godzinie żeby to zrobić, weny brak a jakis
+              tekst musi być
+            </p>
+          </article>
         </section>
-
-
-    </div>
+      </div>
     </main>
     <footer class="footer">
-
-        Celem jest obycie się z podstawami HTML i CSS. <a href="#top">wróć do góry</a>
+      Celem jest obycie się z podstawami HTML i CSS.
+      <a href="#top">wróć do góry</a>
     </footer>
-</body>
-
+  </body>
 </html>

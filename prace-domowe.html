@@ -1,70 +1,57 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="main-navigation">
-    
-        <nav>
-
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka html</a>
-            <a href="prace-domowe.html">Prace domowe</a>
-            <a href="brak-pomyslu.html">Brak pomysłu</a>
-        </nav>
-
+      <nav>
+        <a class="main-navigation__link" href="index.html">Strona główna</a>
+        <a class="main-navigation__link" href="nauka-html.html">Nauka html</a>
+        <a class="main-navigation__link" href="prace-domowe.html">Prace domowe</a>
+        <a class="main-navigation__link" href="brak-pomyslu.html">Brak pomysłu</a>
+      </nav>
     </header>
     <main>
-        <div class="box">
+      <div class="main">
         <header id="top">
-            <h1 class="green-header"> Justyna Bodurka- Prace domowe.</h1>
+          <h1 class="main__title">Justyna Bodurka- Prace domowe.</h1>
         </header>
 
-
         <section>
-
-            <h2>Kim jestem?</h2>
-            <img src="justyna-pienza.jpg" alt="oto ja" />
-
+          <h2 class= "article__title">Kim jestem?</h2>
+          
+          <img src="justyna-pienza.jpg"  class ="article__img"alt="oto ja" />
         </section>
-        <section class="background">
-            <h2 class="turcus-header">Notatki z postępów w nauce</h2>
+        <section >
+          <h2 class= "article__title">Notatki z postępów w nauce</h2>
 
+          <article class="article">
+            <h3 class= "article__title article__title--less-important">
+              Rozbudowuje projekt Homepage, dodając kolejne pliki
+            </h3>
+          </article>
 
+          <article class="article">
+            <h3 class="article__title article__title">Na jakim etapie jestem?</h3>
 
-            <article>
-                <h3 class="pink-background">Rozbudowuje projekt Homepage, dodając kolejne pliki</h3>
-
-
-            </article>
-
-            <article>
-
-                <h3>Na jakim etapie jestem?</h3>
-
-
-                <p>Stworzyłam kilka podstron oraz nawigację między nimi, do każdej podstrony dodaje zdjęcie.<br>
-                    Sprawdzam kod w walidatorze.
-                </p>
-            </article>
-
+            <p class="article__description">
+              Stworzyłam kilka podstron oraz nawigację między nimi, do każdej
+              podstrony dodaje zdjęcie.<br />
+              Sprawdzam kod w walidatorze.
+            </p>
+          </article>
         </section>
-
-
-    </div>
+      </div>
     </main>
     <footer class="footer">
-
-        Celem jest obycie się z podstawami HTML i CSS. <a href="#top">wróć do góry</a>
+      Celem jest obycie się z podstawami HTML i CSS.
+      <a href="#top">wróć do góry</a>
     </footer>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,92 +1,96 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="main-navigation">
-        <nav>
-            <b>
-            <a href="nauka-html.html">Nauka html</a>
-            <a href="index.html">Strona główna</a>
-            <a href="prace-domowe.html">Prace domowe</a>
-            <a href="brak-pomyslu.html">Brak pomysłu</a>
-        </b>
-        </nav>
-
+      <nav>
+        <a class="main-navigation__link" href="index.html">Strona główna</a>
+        <a class="main-navigation__link" href="nauka-html.html">Nauka html</a>
+        <a class="main-navigation__link" href="prace-domowe.html"
+          >Prace domowe</a
+        >
+        <a class="main-navigation__link" href="brak-pomyslu.html"
+          >Brak pomysłu</a
+        >
+      </nav>
     </header>
     <main>
-        <div class="box">
-            <header id="top">
-                <h1 class="green-header"> Justyna Bodurka- Dziennik postępów nauki</h1>
-            </header>
+      <div class="main">
+        <header class="main__title" id="top">
+          <h1>Justyna Bodurka- Dziennik postępów nauki</h1>
+        </header>
 
+        <section>
+          <h2 class="article__title">Kim jestem?</h2>
 
-            <section>
+          <img src="justyna-zdjecie.jpg" alt="Justyna i Adaś" />
 
-                <h2>Kim jestem?</h2>
+          <article class="article">
+            <h4 class= "article__title article__title--less-important">
+              Hej! Na co dzień jestem mamą małego łobuza Adasia, który ma 5 lat
+              i
+              <em>mnóstwo energii</em>
+            </h3>
+            <p class="article__description">
+              Zawodowo zajmuję się stylizacją rzęs. Poza tym
+              <b>uwielbiam biegać i ćwiczyć jogę</b>.<br />
+              Tworzę te stronę w ramach zadania domowego, mając nadzieję że nie
+              będzie totalna porażką <a href="#notatki">przejdź do notatek</a>.
+            </p>
+          </article>
+        </section>
 
-                <img src="justyna-zdjecie.jpg" alt="Justyna i Adaś" />
+        <section id="notatki">
+          <h2 class="article__title">Notatki z postępów w nauce</h2>
 
-                <p>Hej! </p>
-                <p>Na co dzień jestem mamą małego łobuza Adasia, który ma 5 lat i <em>mnóstwo energii</em> . <br />
-                    Zawodowo zajmuję
-                    się stylizacją rzęs. Poza tym <b>uwielbiam biegać i ćwiczyć jogę</b>.<br />
-                    Tworzę te stronę w ramach zadania
-                    domowego, mając nadzieję że nie będzie totalna porażką <a href="#notatki">przejdź do notatek</a>.
+          <article class="article">
+            <h3 class="article__title">Skąd pomysł nauki programowania?</h3>
 
-            </section>
-            <section id="notatki">
-                <h2 class="turcus-header">Notatki z postępów w nauce</h2>
+            <p class="article__description">
+              Ostatnio w skutek <i>pandemii</i> mam trochę więcej czasu,
+              postanowiłam więc nie marnować go na facebooku, lecz pouczyć się
+              czegoś nowego, co być może za jakiś czas przy odpowiednim
+              nakładzie pracy przyniesie efekty w postaci lepszego zrozumienia
+              zagadnień i być może <strong>zmiany drogi kariery </strong> -
+              zobaczymy. Korzystam ze szkolenia
+              <a href="https://cotenfrontend.pl">WTF</a>
+            </p>
+          </article>
 
+          <article class="article">
+            <h3 class="article__title">Na jakim etapie jestem?</h3>
 
+            <p class="article__description">
+              Na dzień 04.11 jestem całkowicie zielona w kwestii jakiegokolwiek
+              języka programowania i lekko przerażona tematem, ale jednocześnie
+              jestem bardzo zdeterminowana do nauki. W ramach zadania domowego
+              będę wprowadzać na tej stronie jakieś treści – postępy w nauce,
+              ale nie tylko.
+            </p>
+            <p class="article__description">
+              Mamy 11.01.2021, po dwóch miesiącach przerwy wznawiam naukę nad
+              HTML i CSS, mam nadzieję, że ta <em>mała</em> przerwa nie narobi
+              za dużego bałaganu.
+            </p>
 
-                <article>
-                    <h3 class="red-header">Skąd pomysł nauki programowania?</h3>
-
-                    <p>Ostatnio w skutek <i>pandemii</i> mam trochę więcej czasu, postanowiłam więc nie marnować go na
-                        facebooku,
-                        lecz pouczyć się czegoś nowego, co być może za jakiś czas przy odpowiednim nakładzie pracy
-                        przyniesie efekty w postaci lepszego zrozumienia zagadnień i być może <strong>zmiany drogi kariery
-                        </strong> -
-                        zobaczymy. Korzystam ze szkolenia <a href="https://cotenfrontend.pl">WTF</a>
-                    </p>
-                </article>
-
-                <article>
-
-                    <h3 class="background">Na jakim etapie jestem?</h3>
-
-
-                    <p>Na dzień 04.11 jestem całkowicie zielona w kwestii jakiegokolwiek języka programowania i lekko
-                        przerażona tematem, ale jednocześnie jestem bardzo zdeterminowana do nauki. W ramach zadania
-                        domowego będę wprowadzać na tej stronie jakieś treści – postępy w nauce, ale nie tylko.
-                    </p>
-                </article>
-                <article>
-                    <h3>Mamy 11.01.2021, po dwóch miesiącach przerwy wznawiam naukę nad HTML i CSS, mam nadzieję, że ta
-                        <em>mała</em> przerwa nie narobi za dużego bałaganu.
-
-                    </h3>
-                    <p>W ramach ćwiczeń w dzisiejszym tygodniu instalujemy gita i zakładamy konto na GitHub</p>
-
-                </article>
-            </section>
-         </div>
+            <p class="article__description">
+              W ramach ćwiczeń w dzisiejszym tygodniu instalujemy gita i
+              zakładamy konto na GitHub
+            </p>
+          </article>
+        </section>
+      </div>
     </main>
     <footer class="footer">
-
-        Celem jest obycie się z podstawami HTML i CSS. <a href="#top">wróć do góry</a>
+      Celem jest obycie się z podstawami HTML i CSS.
+      <a href="#top">wróć do góry</a>
     </footer>
     <!-- <script src="main.js"></script> -->
-       
-    
-</body>
-
+  </body>
 </html>
