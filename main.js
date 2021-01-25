@@ -4,3 +4,5 @@ alert ('Witaj drogi odwiedzający');
 console.log(firstName);
 console.log(age);
 console.log(`Witaj drogi odbiorco,nazywam się ${firstName} i mam ${age} lat`);
+const test = document.querySelector ('.article__title--js');
+test.innerHTML='tekst w ramach pracy domowej JS. DOM. document.querySelektor, nazwa zmiennej QuerySelektor.innerHTML';
