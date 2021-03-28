@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <header class="main-navigation">
-      <nav>
-        <a class="main-navigation__link" href="index.html">Strona główna</a>
+    <header class="main-navigation__wrapper">
+      <nav  class="main-navigation">
+        <a class="main-navigation__link " href="index.html">Strona główna</a>
         <a class="main-navigation__link" href="nauka-html.html">Nauka html</a>
         <a class="main-navigation__link" href="prace-domowe.html"
           >Prace domowe</a
@@ -26,12 +27,13 @@
           <h1>Justyna Bodurka- Dziennik postępów nauki</h1>
         </header>
 
-        <section>
-          <h2 class="article__title">Kim jestem?</h2>
+        <section class="articles-list">
 
-          <img src="justyna-zdjecie.jpg" alt="Justyna i Adaś" />
+          <h2 class="articles-list__title">Kim jestem?</h2>
 
-          <article class="article">
+          <img class= "article-list__picture" src="img/justyna-zdjecie.jpg" alt="Justyna i Adaś" />
+
+          <article class="article ">
             <h4 class= "article__title article__title--less-important">
               Hej! Na co dzień jestem mamą małego łobuza Adasia, który ma 5 lat
               i
@@ -41,13 +43,13 @@
               Zawodowo zajmuję się stylizacją rzęs. Poza tym
               <b>uwielbiam biegać i ćwiczyć jogę</b>.<br />
               Tworzę te stronę w ramach zadania domowego, mając nadzieję że nie
-              będzie totalna porażką <a href="#notatki">przejdź do notatek</a>.
+              będzie totalna porażką <a class= "article__link" href="#notatki">przejdź do notatek</a>.
             </p>
           </article>
         </section>
 
-        <section id="notatki">
-          <h2 class="article__title">Notatki z postępów w nauce</h2>
+        <section class = "articles-list articles-list--grid" id="notatki">
+          <h2 class="articles-list__title">Notatki z postępów w nauce</h2>
 
           <article class="article">
             <h3 class="article__title">Skąd pomysł nauki programowania?</h3>
@@ -59,7 +61,7 @@
               nakładzie pracy przyniesie efekty w postaci lepszego zrozumienia
               zagadnień i być może <strong>zmiany drogi kariery </strong> -
               zobaczymy. Korzystam ze szkolenia
-              <a href="https://cotenfrontend.pl">WTF</a>
+              <a class= "article__link" href="https://cotenfrontend.pl">WTF</a>
             </p>
           </article>
 
@@ -90,7 +92,7 @@
     </main>
     <footer class="footer">
       Celem jest obycie się z podstawami HTML i CSS.
-      <a href="#top">wróć do góry</a>
+      <a class="footer__link" href="#top">wróć do góry</a>
     </footer>
     <script src="main.js"></script> -->
   </body>
