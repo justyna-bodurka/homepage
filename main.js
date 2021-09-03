@@ -4,44 +4,57 @@ alert("Witaj drogi odwiedzający");
 console.log(firstName);
 console.log(age);
 console.log(`Witaj drogi odbiorco,nazywam się ${firstName} i mam ${age} lat`);
-const test = document.querySelector(".article__title--js");
-test.innerHTML =
-  "tekst w ramach pracy domowej JS. DOM. document.querySelektor, nazwa zmiennej QuerySelektor.innerHTML";
 
 const calculateOld = (myNumber) => (myNumber + 3) * 7;
 console.log(calculateOld(7));
 
-function dupka (myNumber) {
-   onsole.log(`siema ${myNumber}`)
+function calculate (myNumber) {
+    return (myNumber + 3) * 7;
 }
-
-const dupka = myNumber => { console.log(`siema ${myNumber}`) }
-
-
-const calculate = (myNumber) => (myNumber + 3) * 7;
 const myResult = calculate(2);
 console.log(myResult);
 
-function greet (firstName, age){
-    console.log(`Witaj drogi odbiorco, jestem ${firstName} i mam ${age} lat`);
+function greet(firstName, age) {
+  console.log(`Witaj drogi odbiorco, jestem ${firstName} i mam ${age} lat`);
 }
 greet(firstName, age);
 
-const humanOne= {
-    name: "Łukasz",
-    age: 40,
-    adress:{
-        street: "Milczańska",
-        city: "Szczecin",
-    }
-}
+const test = document.querySelector(".article__title--js");
+test.innerHTML = "tekst w ramach pracy domowej JS. DOM.";
 
-const humanTwo= {
-    name: "Gosia",
-    age: 25,
-    adress: humanOne.adress
+
+function dupka (querySelectorContent, content){
+    const dupcia = document.querySelector(querySelectorContent);
+    dupcia.innerHTML = content;
 }
-console.log (humanTwo);
+dupka ('.articles-list__title--js', 'lepiej zeby wyszło');
+
+const humanOne = {
+  name: "Łukasz",
+  age: 40,
+  adress: {
+    street: "Milczańska",
+    city: "Szczecin",
+  },
+};
+
+const humanTwo = {
+  name: "Gosia",
+  age: 25,
+  adress: humanOne.adress,
+};
+console.log(humanTwo);
 
 console.log(humanOne);
 
+function calculateTwo (myNumber) {
+return myNumber*4
+}
+const myResultNew = calculateTwo(10);
+console.log(myResultNew);
+
+const hamburger = document.querySelector('.hamburger--js');
+hamburger.addEventListener('click', () => {
+  const nav = document.querySelector ('.main-navigation--js');
+  nav.classList.toggle('main-navigation--open');
+})
