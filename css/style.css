@@ -95,6 +95,15 @@ display: block;
 .articles-list__title {
   color: darkblue;
 }
+.articles-list__title::before {
+  content:"";
+  display:inline-block;
+  width: 16px;
+  height: 16px;
+  background:orangered;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 .article__title--grid-1 {
   grid-area: article__title--grid-1;
 }
