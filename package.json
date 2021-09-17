@@ -2,10 +2,22 @@
   "name": "homepage",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
+    "sass": "node-sass -w scss/style.scss css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justyna-bodurka/homepage.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justyna-bodurka/homepage/issues"
+  },
+  "homepage": "https://github.com/justyna-bodurka/homepage#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
 }
